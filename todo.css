@@ -1,0 +1,44 @@
+
+main{
+    margin-top: 3cm;
+}
+#addBtn{
+    z-index: 5;
+    transition: transform 0.5s;
+   
+}
+.rotate
+{   
+    transform: rotateZ(225deg);
+    
+
+}
+#submitBtn{
+    background-color: rgb(8, 187, 8);
+    
+}
+.box{
+    min-height: 7cm !important;
+    background-color: lightgray;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.box_border{
+    border: 5px solid gray ;
+    background: linear-gradient(45deg,#ff6968,#a334fa,#0695ff) !important;
+}
+
+.clsbtn{
+    position:absolute;
+    top: 0.1cm;
+    right: 0.2cm;
+    background-color: red !important;
+}
+
+.pinbtn{
+    position: absolute;
+    top: 0.1cm;
+    right:1.5cm;   
+}
+
+
