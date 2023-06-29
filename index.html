@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Notes</title>
+  <link rel="stylesheet" href="./todo.css">
+  <!-- Required meta tags -->
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body >
+  <div  style="position: fixed; left: 0; right: 0; top: 0; z-index: 4; ">
+    <!-- place navbar here -->
+    <nav  class="navbar navbar-expand-xxxx navbar-light bg-primary"
+    >
+      <div class="container-sm">
+        <a class="navbar-brand " href="#">
+          <h1 class="text-white"><i class="fa fa-list-alt" aria-hidden="true"></i> Notes</h5>
+        </a>
+        <!-- search-bar -->
+        <form class="d-flex my-2 my-lg-0 ">
+          <div class="input-group me-auto ">
+            <input id="searchBar" class="form-control  me-auto"   type="text" placeholder="Search">
+            <span class="input-group-text bg-black" style="height: 1.2cm;"><img style="object-fit:contain; height: 1cm;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0-Cq3rdNBd8aYOZEwpiGLg2MXUzHFNQrvw&usqp=CAU"
+                alt="Search"></span>
+          </div>
+          
+        </form>
+
+       
+        <!-- inputContainer -->
+        <div class="container form">
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <div class="mb-3">
+                  <hr>
+                  <label for="titleinput" class="form-label text-light">Title</label>
+                  <input required type="text" class="form-control" name="titleinput" id="titleinput"
+                    aria-describedby="helpId" placeholder="Enter The Title...(Required)">
+
+                  <br>
+                  <label for="notescontent" class="form-label text-light">Notes</label>
+                  <textarea required class="form-control" name="notescontent" id="notescontent" cols="30" rows="10"
+                    placeholder="Enter your Notes...(Required)" style="height: 4cm;"></textarea>
+                </div>
+              </li>
+              <div class="container-sm">
+                <div class="row">
+                  
+                  <div class="col ">
+                    <div class="row"> <button id="submitBtn" type="submit"
+                        class="mb-3 text-center btn btn-success disabled " data-bs-toggle="collapse" data-bs-target="#collapsibleNavId">Submit</button></div>
+                  </div>
+                 
+                </div>
+              </div>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+  </div>
+  
+  <div>
+    <!-- card  containers-->
+    <div class="container-sm" >
+      <div id="main-box" class="card-groups justify-content-center align-items-center g-2" style="margin-top: 4cm;margin-bottom: 4cm;">
+       
+
+      </div>
+    </div>
+    </div>
+    
+    <button id="addBtn" class=" text-bg-warning  "
+  
+    type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <div style=" position: absolute;  top: -0.8cm;left: 0.27cm; font-size:2cm; ">
+      <!-- position: absolute;  top: -0.2cm;left: 0.3cm; font-size:2cm; -->
+      <p class="">+</p>
+    </div>
+  </button>
+
+  <footer>
+    <!-- place footer here -->
+   
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+
+
+  <script src="./todo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+      </script>
+    
+</body>
+
+</html>
